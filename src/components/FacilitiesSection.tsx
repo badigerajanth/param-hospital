@@ -18,17 +18,20 @@ export default function FacilitiesSection() {
   ];
 
   return (
-    <section id="facilities" className="py-20 lg:py-28 bg-slate-50 border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="facilities" className="py-20 lg:py-28 bg-gradient-to-b from-teal-50/25 via-white to-purple-50/30 border-b border-rose-100/70 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-50 text-brand-teal border border-teal-200 text-xs font-semibold tracking-wide uppercase mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100/80 text-brand-teal border border-teal-200 text-xs font-bold uppercase tracking-wider mb-3">
             <ShieldCheck className="w-3.5 h-3.5 text-brand-teal" />
             <span>Infrastructure &amp; Amenities</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
-            Diagnostics, pharmacy &amp; day-care on-site.
+            Diagnostics, pharmacy &amp;{" "}
+            <span className="bg-gradient-to-r from-brand-purple via-brand-rose to-brand-teal bg-clip-text text-transparent">
+              day-care on-site.
+            </span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
             Eliminating stressful hospital transfers by housing essential diagnostic labs, sonography, and medications directly in our clinic.

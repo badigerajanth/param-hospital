@@ -25,19 +25,22 @@ export default function ReviewsAndMap() {
     <section
       id="reviews"
       ref={sectionRef}
-      className="py-20 lg:py-28 bg-slate-50/60 border-b border-slate-200 overflow-hidden"
+      className="py-20 lg:py-28 bg-gradient-to-b from-purple-50/30 via-white to-rose-50/30 border-b border-rose-100/70 overflow-hidden relative"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-50 text-brand-teal border border-teal-200 text-xs font-semibold tracking-wide uppercase mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100/80 text-brand-purple border border-purple-200 text-xs font-bold uppercase tracking-wider mb-3">
               <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
               <span>Google Patient Testimonials</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Trusted by families across Bengaluru.
+              Trusted by families across{" "}
+              <span className="bg-gradient-to-r from-brand-purple via-brand-rose to-brand-teal bg-clip-text text-transparent">
+                Bengaluru.
+              </span>
             </h2>
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mt-2">
               4.9★ verified Google patient reviews for Dr. Anil Raj D, Dr. Pallavi K N, and the Param clinical team.

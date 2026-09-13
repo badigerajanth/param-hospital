@@ -40,24 +40,33 @@ Please confirm my appointment slot. Thank you!`;
   };
 
   return (
-    <section id="appointment" className="py-20 lg:py-28 bg-slate-50 border-b border-slate-200">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="appointment" className="py-20 lg:py-28 bg-gradient-to-b from-rose-50/40 via-white to-purple-50/40 border-b border-rose-100/70 relative overflow-hidden">
+      {/* Brand Color Ambient Glows */}
+      <div className="absolute top-10 left-10 w-80 h-80 bg-rose-200/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-purple-200/20 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Card Container */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-elevated">
+        {/* Card Container with Brand Gradient Accent */}
+        <div className="bg-white rounded-3xl overflow-hidden border-2 border-brand-purple/20 shadow-elevated">
+          <div className="h-2 w-full bg-gradient-to-r from-brand-purple via-brand-rose to-brand-teal" />
           
-          <div className="text-center max-w-xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-50 text-brand-teal border border-teal-200 text-xs font-semibold tracking-wide uppercase mb-3">
-              <Calendar className="w-3.5 h-3.5 text-brand-teal" />
-              <span>Instant WhatsApp Booking</span>
+          <div className="p-8 sm:p-12">
+            <div className="text-center max-w-xl mx-auto mb-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100/80 text-brand-purple border border-purple-200 text-xs font-bold uppercase tracking-wider mb-3">
+                <Calendar className="w-3.5 h-3.5 text-brand-purple" />
+                <span>Instant WhatsApp Booking</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-3">
+                Schedule your{" "}
+                <span className="bg-gradient-to-r from-brand-purple via-brand-rose to-brand-teal bg-clip-text text-transparent">
+                  doctor visit.
+                </span>
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+                Fill in your details below. We instantly prepare and send a WhatsApp appointment request to our clinic coordinator.
+              </p>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-3">
-              Schedule your doctor visit.
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-              Fill in your details below. We instantly prepare and send a WhatsApp appointment request to our clinic coordinator.
-            </p>
-          </div>
 
           {isSubmitted ? (
             <div className="p-8 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3">
@@ -217,7 +226,7 @@ Please confirm my appointment slot. Thank you!`;
               </div>
             </form>
           )}
-
+          </div>
         </div>
       </div>
     </section>

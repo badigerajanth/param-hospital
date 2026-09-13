@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { Star, Phone, MessageCircle, ShieldCheck, Award, HeartPulse, Sparkles, MapPin } from "lucide-react";
+import { Star, Phone, MessageCircle, ShieldCheck, Award, HeartPulse, MapPin } from "lucide-react";
 import { HOSPITAL_INFO } from "@/data/hospitalData";
 import { REVIEWS_STATS } from "@/data/reviewsData";
 

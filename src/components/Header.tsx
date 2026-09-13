@@ -14,6 +14,7 @@ export default function Header() {
     { name: "About Clinic", href: "#about" },
     { name: "Doctors", href: "#doctors" },
     { name: "Specialties & Surgery", href: "#specialties" },
+    { name: "Hospital Facade & Tour", href: "#campus-tour" },
     { name: "Facilities", href: "#facilities" },
     { name: "Patient Reviews", href: "#reviews" },
     { name: "Find Us", href: "#location" },
@@ -24,17 +25,17 @@ export default function Header() {
   )}`;
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all">
-      {/* Top Notification Strip */}
-      <div className="bg-brand-navy text-slate-200 text-xs py-2 px-4 border-b border-brand-navy-light/40">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-rose-100 transition-all">
+      {/* Top Notification Strip with Brand Colors */}
+      <div className="bg-gradient-to-r from-brand-purple-dark via-brand-purple to-[#2b0e25] text-slate-200 text-xs py-2 px-4 border-b border-rose-900/40">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5 text-slate-300">
-              <MapPin className="w-3.5 h-3.5 text-brand-teal" />
-              <span>Yelahanka, Bengaluru (Above Tata Motors)</span>
+            <span className="flex items-center gap-1.5 text-slate-200">
+              <MapPin className="w-3.5 h-3.5 text-rose-300" />
+              <span>Yelahanka, Bengaluru &middot; 1st Floor, P.L. Complex (Above Tata Motors)</span>
             </span>
-            <span className="hidden md:flex items-center gap-1.5 text-slate-300">
-              <Clock className="w-3.5 h-3.5 text-brand-teal" />
+            <span className="hidden md:flex items-center gap-1.5 text-slate-200">
+              <Clock className="w-3.5 h-3.5 text-teal-300" />
               <span>Mon-Sat: 9:00 AM – 8:30 PM | Sun: 9:30 AM – 1:30 PM</span>
             </span>
           </div>
@@ -89,10 +90,10 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href={`tel:${HOSPITAL_INFO.phones.appointmentRaw}`}
-              className="btn-press inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-brand-navy bg-slate-100 hover:bg-slate-200 rounded-lg border border-slate-300"
+              className="btn-press inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold text-brand-purple bg-purple-50 hover:bg-purple-100 rounded-lg border border-purple-200"
               title="Call Clinic Reception"
             >
-              <Phone className="w-3.5 h-3.5 text-brand-teal" />
+              <Phone className="w-3.5 h-3.5 text-brand-rose" />
               <span>Call Reception</span>
             </a>
 

@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-brand-navy text-white relative">
+    <footer className="bg-gradient-to-b from-[#260e22] via-[#170815] to-[#0c1322] text-white relative">
       {/* Emergency Banner */}
       <div className="bg-gradient-to-r from-rose-900 via-brand-purple to-brand-navy border-b border-rose-500/30 py-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
@@ -77,37 +77,37 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-300">
               <li>
-                <a href="#about" className="hover:text-white transition-colors">
+                <a href="#about" className="hover:text-rose-300 transition-colors">
                   About Clinic
                 </a>
               </li>
               <li>
-                <a href="#doctors" className="hover:text-white transition-colors">
+                <a href="#doctors" className="hover:text-rose-300 transition-colors">
                   Our Doctors
                 </a>
               </li>
               <li>
-                <a href="#specialties" className="hover:text-white transition-colors">
-                  Laparoscopic Surgery
+                <a href="#specialties" className="hover:text-rose-300 transition-colors">
+                  Specialties &amp; Surgery
                 </a>
               </li>
               <li>
-                <a href="#specialties" className="hover:text-white transition-colors">
-                  Maternity &amp; Gynaec
+                <a href="#campus-tour" className="hover:text-teal-300 transition-colors font-semibold text-rose-200">
+                  Hospital Facade &amp; Tour
                 </a>
               </li>
               <li>
-                <a href="#facilities" className="hover:text-white transition-colors">
+                <a href="#facilities" className="hover:text-rose-300 transition-colors">
                   Facilities &amp; Lab
                 </a>
               </li>
               <li>
-                <a href="#reviews" className="hover:text-white transition-colors">
+                <a href="#reviews" className="hover:text-rose-300 transition-colors">
                   Patient Reviews
                 </a>
               </li>
               <li>
-                <a href="#appointment" className="hover:text-white transition-colors">
+                <a href="#appointment" className="hover:text-rose-300 transition-colors">
                   Book Appointment
                 </a>
               </li>

@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import DoctorPortfolios from "@/components/DoctorPortfolios";
 import SpecialtiesSection from "@/components/SpecialtiesSection";
+import HospitalCampusSection from "@/components/HospitalCampusSection";
 import FacilitiesSection from "@/components/FacilitiesSection";
 import ReviewsAndMap from "@/components/ReviewsAndMap";
 import AppointmentForm from "@/components/AppointmentForm";
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutSection />
         <DoctorPortfolios />
         <SpecialtiesSection />
+        <HospitalCampusSection />
         <FacilitiesSection />
         <ReviewsAndMap />
         <AppointmentForm />
